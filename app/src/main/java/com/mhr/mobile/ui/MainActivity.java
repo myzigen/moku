@@ -118,36 +118,36 @@ public class MainActivity extends InjectionActivity implements ViewPager.OnPageC
   public void onPageScrollStateChanged(int arg0) {}
 
   private BottomNavigationView.OnNavigationItemSelectedListener navigationSelectedListener =
-      item -> {
-        switch (item.getItemId()) {
-          case R.id.nav_home:
-            if (viewPager.getCurrentItem() != 0) {
-              viewPager.setCurrentItem(0);
-            }
-            return true;
-          case R.id.nav_transaksi:
-            if (viewPager.getCurrentItem() != 1) {
-              viewPager.setCurrentItem(1);
-            }
-            return true;
-          case R.id.nav_downline:
-            if (viewPager.getCurrentItem() != 2) {
-              viewPager.setCurrentItem(2);
-            }
-            return true;
-          case R.id.nav_pelanggan:
-            if (viewPager.getCurrentItem() != 3) {
-              viewPager.setCurrentItem(3);
-            }
-            return true;
-          case R.id.nav_account:
-            if (viewPager.getCurrentItem() != 4) {
-              viewPager.setCurrentItem(4);
-            }
-            return true;
+    item -> {
+      int id = item.getItemId();
+      if (id == R.id.nav_home) {
+        if (viewPager.getCurrentItem() != 0) {
+          viewPager.setCurrentItem(0);
         }
-        return false;
-      };
+        return true;
+      } else if (id == R.id.nav_transaksi) {
+        if (viewPager.getCurrentItem() != 1) {
+          viewPager.setCurrentItem(1);
+        }
+        return true;
+      } else if (id == R.id.nav_downline) {
+        if (viewPager.getCurrentItem() != 2) {
+          viewPager.setCurrentItem(2);
+        }
+        return true;
+      } else if (id == R.id.nav_pelanggan) {
+        if (viewPager.getCurrentItem() != 3) {
+          viewPager.setCurrentItem(3);
+        }
+        return true;
+      } else if (id == R.id.nav_account) {
+        if (viewPager.getCurrentItem() != 4) {
+          viewPager.setCurrentItem(4);
+        }
+        return true;
+      }
+      return false;
+    };
 
   public void getCurrentDownline() {
     if (viewPager.getCurrentItem() != 2) {
