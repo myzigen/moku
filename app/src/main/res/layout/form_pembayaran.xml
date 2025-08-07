@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.mhr.mobile.widget.imageview.RoundedImageView
+                android:id="@+id/img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="14dp"
+                android:scaleType="centerCrop"
+                app:radius="7dp" />
+
+            <TextView
+                android:id="@+id/infoKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/img"
+                android:layout_toEndOf="@id/img"
+                android:text="Type" />
+
+            <TextView
+                android:id="@+id/infoBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img"
+                android:layout_toEndOf="@id/img"
+                android:text="Brand" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.mhr.mobile.widget.ticketview.TicketView
+        android:id="@+id/wrap2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:ticketBackgroundColor="@color/me_background_front"
+        app:ticketBorderColor="@color/me_divider"
+        app:ticketCornerRadius="8dp"
+        app:ticketCornerType="scallop"
+        app:ticketDividerColor="@color/me_divider"
+        app:ticketDividerDesign="color"
+        app:ticketDividerLocation="top"
+        app:ticketDividerPadding="5dp"
+        app:ticketDividerType="dash"
+        app:ticketDividerWidth="1dp"
+        app:ticketElevation="0dp"
+        app:ticketOrientation="vertical"
+        app:ticketPunchLocation="none"
+        app:ticketPunchRadius="12dp"
+        app:ticketScallopRadius="6dp"
+        app:ticketShowBorder="true"
+        app:ticketShowDivider="true"
+        app:view="@id/content" >
+
+        <LinearLayout
+            android:id="@+id/wrap3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="25dp" >
+
+            <LinearLayout
+				android:id="@+id/wrap_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/titleInquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Inquiry"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoInquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:gravity="end"
+                    android:text="Nama" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/titleNomor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoInquiry"
+                    android:layout_weight="1"
+                    android:text="Nomor Tujuan"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoNomor"
+                    android:layout_width="match_parent"
+					android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+					android:gravity="end"
+                    android:layout_below="@id/infoInquiry"
+                    android:text="083168612666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoNomor"
+                    android:layout_weight="1"
+                    android:text="Pembelian"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoProduk"
+                    android:layout_width="match_parent"
+					android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_below="@id/infoNomor"
+                    android:text="Nama Produk" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoProduk"
+                    android:layout_weight="1"
+                    android:text="Keterangan"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoDesc"
+                    android:layout_width="match_parent"
+					android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_below="@id/infoProduk"
+                    android:text="Pembelian" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/infoDesc"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Harga" />
+
+                <TextView
+                    android:id="@+id/infoHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Rp.11.500"
+                    android:textColor="@color/me_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.mhr.mobile.widget.ticketview.TicketView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrap2"
+        android:layout_margin="8dp" >
+
+        <LinearLayout
+            android:id="@+id/voucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/me_background_front"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center|center_horizontal"
+                android:layout_weight="1"
+                android:text="Voucher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Masukan Kode Voucher"
+                    android:textColor="@color/me_color_text_light" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:src="@drawable/chevron_right_small"
+                    android:tint="@color/me_color_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card4"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card3"
+        android:layout_marginHorizontal="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sebagai Penjual" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atur Harga Jual"
+                android:textColor="@color/me_color_text_light" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card4"
+        android:layout_margin="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saldo Kamu" />
+
+            <TextView
+                android:id="@+id/titleSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:textColor="@color/status_canceled"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/infoSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.0"
+                android:textColor="@color/me_color_text_light" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.mhr.mobile.widget.button.SwipeButton
+        android:id="@+id/btnBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:nestedScrollingEnabled="false"
+        app:button_background_drawable="@drawable/swipe_button_rect_bg"
+        app:button_background_padding="14dp"
+        app:button_background_src="@drawable/chevron_right_small"
+        app:button_background_tint="@color/white"
+        app:button_height="55dp"
+        app:button_width="55dp"
+        app:has_active_status="false"
+        app:has_finish_animation="false"
+        app:inner_text="Geser Untuk Bayar"
+        app:inner_text_color="@color/white"
+        app:inner_text_gravity="center"
+        app:inner_text_padding="8dp"
+        app:inner_text_size="16sp"
+        app:outer_background_drawable="@drawable/swipe_rounded_rect_bg"
+        app:outer_background_height="55dp"
+        app:outer_background_tint="@color/white"
+        app:trail_background_tint="@color/transparent"
+        app:trail_enabled="true" />
+
+</RelativeLayout>

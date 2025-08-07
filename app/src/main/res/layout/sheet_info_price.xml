@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        app:cardBackgroundColor="@color/me_background_front"
+        app:cardCornerRadius="15dp"
+        app:strokeColor="@color/me_divider" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <com.mhr.mobile.widget.imageview.RoundedImageView
+                    android:id="@+id/img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+					android:layout_marginEnd="14dp"
+					android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:radius="7dp" />
+
+                <TextView
+                    android:id="@+id/infoProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/img"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/img"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/infoDetailProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoProduk"
+                    android:layout_toEndOf="@id/img" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/border_line_dashed" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp" >
+
+                <TextView
+                    android:id="@+id/titleNomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Nomor" />
+
+                <TextView
+                    android:id="@+id/infoNomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="083168612666"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/titleKategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleNomor"
+                    android:layout_marginBottom="8dp"
+                    android:text="Produk" />
+
+                <TextView
+                    android:id="@+id/infoKategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleNomor"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/titleHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleKategori"
+                    android:text="Harga" />
+
+                <TextView
+                    android:id="@+id/infoHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleKategori"
+                    android:text="Rp10.000"
+                    android:textColor="@color/me_blue"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/selengkapnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:text="Selengkapnya"
+        android:textColor="@color/status_canceled"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAktivasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:padding="16dp"
+        android:textColor="@color/me_color_text"
+        app:backgroundTint="@color/btn_enabled_selector"
+        app:cornerRadius="8dp" />
+
+</LinearLayout>

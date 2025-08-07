@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backdrop_wave" />
+
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backdrop_plus" />
+
+    <TextView
+        android:id="@+id/yey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.mhr.mobile.widget.ticketview.TicketView
+        android:id="@+id/ticketview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="70dp"
+        app:ticketBackgroundColor="#ffffff"
+        app:ticketBorderColor="#e9e9e9"
+        app:ticketCornerRadius="8dp"
+        app:ticketCornerType="rounded"
+        app:ticketDividerColor="#e9e9e9"
+        app:ticketDividerDesign="color"
+        app:ticketDividerLocation="top"
+        app:ticketDividerPadding="5dp"
+        app:ticketDividerType="dash"
+        app:ticketDividerWidth="1dp"
+        app:ticketElevation="0dp"
+        app:ticketOrientation="vertical"
+        app:ticketPunchLocation="none"
+        app:ticketPunchRadius="12dp"
+        app:ticketScallopRadius="6dp"
+        app:ticketShowBorder="true"
+        app:ticketShowDivider="true"
+        app:view="@id/price_holder6" >
+
+        <LinearLayout
+            android:id="@+id/option6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="40dp" >
+
+                <TextView
+                    android:id="@+id/titleInquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Inquiry"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoInquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="nama"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleInquiry"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pembelian"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleInquiry"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pulsa"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/titleNomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoProduk"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nomor Tujuan"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoNomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/infoProduk"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/titleProvider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleNomor"
+                    android:layout_marginBottom="10dp"
+                    android:text="Provider"
+                    android:textColor="@color/me_color_text_light" />
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@id/infoProvider"
+                    android:layout_alignTop="@id/infoProvider"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@id/infoProvider"
+                    android:background="@drawable/corners_bg_outline"
+                    android:visibility="gone" >
+
+                    <com.mhr.mobile.widget.imageview.RoundedImageView
+                        android:id="@+id/infoImgProvider"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        app:radius="7dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/infoProvider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleNomor"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/titleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleProvider"
+                    android:layout_marginBottom="10dp"
+                    android:text="ID Transaksi"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleProvider"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/titleSn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleId"
+                    android:layout_marginBottom="10dp"
+                    android:text="Serial Number"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoSn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleId"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/titleTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleSn"
+                    android:layout_marginBottom="20dp"
+                    android:text="Tanggal"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleSn"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleTanggal"
+                    android:text="Status Pembelian"
+                    android:textColor="@color/me_color_text_light" />
+
+                <TextView
+                    android:id="@+id/infoStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/titleTanggal"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/price_holder6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|right|end"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Jumlah"
+                    android:textColor="@color/me_color_text_light"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/infoHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.mhr.mobile.widget.ticketview.TicketView>
+
+    <LinearLayout
+        android:id="@+id/viewCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticketview"
+        android:layout_marginHorizontal="18dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBeli"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:padding="16dp"
+			app:cornerRadius="8dp"
+            android:text="Beli Lagi"
+            android:textColor="#00A68E"
+            app:strokeColor="#00A68E" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticketview"
+            android:layout_marginBottom="14dp"
+			app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="#e9e9e9" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/btnUnduh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center|center_horizontal"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="18dp"
+                    android:text="Edit Dan Cetak Pembayaran"
+                    android:textColor="#131313"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			app:cardCornerRadius="8dp"
+            android:layout_below="@id/card1"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="#e9e9e9" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center|center_horizontal"
+                android:padding="18dp"
+                android:text="Simpan Sebagai Favorite"
+                android:textColor="#131313"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:strokeColor="#ffeeebf1"
+        app:strokeWidth="1dp" >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_repeatCount="1" />
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp"
+    android:keyWidth="32.5%p"
+    android:keyHeight="60dp">
+
+    <!-- Baris pertama -->
+    <Row>
+        <Key
+            android:codes="49"
+            android:keyLabel="1"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+    </Row>
+
+    <!-- Baris kedua -->
+    <Row>
+        <Key
+            android:codes="52"
+            android:keyLabel="4"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+    </Row>
+
+    <!-- Baris ketiga -->
+    <Row>
+        <Key
+            android:codes="55"
+            android:keyLabel="7"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+    </Row>
+
+    <!-- Baris keempat -->
+    <Row>
+		<Key
+            android:codes="46"
+            android:keyLabel="."
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+        <Key
+            android:codes="48"
+            android:keyLabel="0"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#000000"
+            android:keyTextSize="24sp" />
+		<Key
+            android:codes="-5"
+            android:keyLabel="Delete"
+            android:keyBackground="@drawable/keyboard_bg"
+            android:keyTextColor="#FF0000"
+            android:keyTextSize="18sp" />
+    </Row>
+
+</Keyboard>

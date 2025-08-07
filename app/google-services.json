@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "919940707636",
+    "firebase_url": "https://qiospro-default-rtdb.firebaseio.com",
+    "project_id": "qiospro",
+    "storage_bucket": "qiospro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919940707636:android:5177c1e13a4e1fb47ce161",
+        "android_client_info": {
+          "package_name": "com.mhr.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNmu3kIBz4QV_Dnggf0hkS5eAB9mTxKr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

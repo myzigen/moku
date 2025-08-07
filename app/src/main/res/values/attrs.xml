@@ -1,0 +1,126 @@
+<resources>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="radius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+        <attr name="android:adjustViewBounds" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="KeyboardNumber">
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SwipeButton">
+        <attr name="default_style" format="reference" />
+        <attr name="inner_text" format="string" />
+        <attr name="inner_text_color" format="color" />
+        <attr name="inner_text_size" format="dimension" />
+        <attr name="inner_text_padding" format="dimension" />
+        <attr name="inner_text_left_padding" format="dimension" />
+        <attr name="inner_text_right_padding" format="dimension" />
+        <attr name="inner_text_top_padding" format="dimension" />
+        <attr name="inner_text_bottom_padding" format="dimension" />
+        <attr name="inner_text_gravity" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="outer_background_drawable" format="reference" />
+        <attr name="outer_background_tint" format="color" />
+        <attr name="outer_background_height" format="dimension" />
+        <attr name="button_background_drawable" format="reference" />
+        <attr name="button_background_tint" format="reference" />
+        <attr name="button_background_src" format="reference" />
+        <attr name="button_width" format="dimension" />
+        <attr name="button_height" format="dimension" />
+        <attr name="button_background_padding" format="dimension" />
+        <attr name="trail_enabled" format="boolean" />
+        <attr name="trail_background_tint" format="color" />
+        <attr name="has_active_status" format="boolean" />
+        <attr name="has_finish_animation" format="boolean" />
+        <attr name="has_finish_animation_back" format="boolean" />
+    </declare-styleable>
+
+    <attr name="dotRadius" format="dimension" />
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="android:gravity" />
+        <attr name="dotRadius" />
+        <attr name="viewPagerId" format="reference" />
+        <attr name="dotPadding" format="dimension" />
+        <attr name="selectedDotColor" format="color" />
+        <attr name="unselectedDotColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="IndicatorDotView">
+        <attr name="dotRadius" />
+        <attr name="dotColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DashedLineView">
+        <attr name="colorPrimary" format="color" />
+        <attr name="dashWidth" format="dimension" />
+        <attr name="dashGap" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TicketView">
+        <attr name="ticketOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ticketBackgroundColor" format="color" />
+        <attr name="ticketScallopRadius" format="dimension" />
+        <attr name="ticketScallopPositionPercent" format="float" />
+        <attr name="ticketShowBorder" format="boolean" />
+        <attr name="ticketBorderWidth" format="dimension" />
+        <attr name="ticketBorderColor" format="color" />
+        <attr name="ticketShowDivider" format="boolean" />
+        <attr name="ticketDividerWidth" format="dimension" />
+        <attr name="ticketDividerPadding" format="dimension" />
+        <attr name="ticketDividerColor" format="color" />
+        <attr name="ticketDividerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="ticketDividerDesign" format="enum">
+            <enum name="color" value="0" />
+            <enum name="punch" value="1" />
+        </attr>
+        <attr name="ticketDividerDashGap" format="dimension" />
+        <attr name="ticketDividerDashLength" format="dimension" />
+        <attr name="ticketCornerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="rounded" value="1" />
+            <enum name="scallop" value="2" />
+        </attr>
+        <attr name="ticketCornerRadius" format="dimension" />
+        <attr name="android:elevation" />
+        <attr name="ticketElevation" format="dimension" />
+        <attr name="view" format="reference" />
+        <attr name="ticketDividerLocation">
+            <flag name="none" value="0" />
+            <flag name="top" value="1" />
+            <flag name="bottom" value="2" />
+            <flag name="left" value="4" />
+            <flag name="right" value="8" />
+        </attr>
+        <attr name="ticketPunchLocation">
+            <flag name="none" value="0" />
+            <flag name="top" value="1" />
+            <flag name="bottom" value="2" />
+            <flag name="left" value="4" />
+            <flag name="right" value="8" />
+        </attr>
+        <attr name="ticketPunchRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- TiketView 2 -->
+
+    <declare-styleable name="TicketView2">
+        <attr name="tv_anchor1" format="reference" />
+        <attr name="tv_anchor2" format="reference" />
+        <attr name="tv_dashColor" format="color" />
+        <attr name="tv_dashSize" format="dimension" />
+        <attr name="tv_circleSpace" format="dimension" />
+        <attr name="tv_circleRadius" format="dimension" />
+    </declare-styleable>
+
+</resources>

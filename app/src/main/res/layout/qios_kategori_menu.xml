@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tablayout"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="start"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingEnd="15dp"
+        app:tabPaddingStart="15dp"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@style/TabTextStyle" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhpan.indicator.IndicatorView
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="14dp"
+        app:vpi_slide_mode="smooth"
+		app:vpi_orientation="horizontal"
+        app:vpi_slider_checked_color="@color/me_blue"
+        app:vpi_slider_normal_color="@color/me_background_back"
+        app:vpi_slider_radius="5dp"
+        app:vpi_style="round_rect" />
+
+</LinearLayout>

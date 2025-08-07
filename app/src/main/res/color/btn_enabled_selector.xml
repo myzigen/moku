@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/color_btn_disabled" android:state_enabled="false"/> <!-- warna saat disabled -->
+    <item android:color="?attr/colorPrimary"/> <!-- warna default -->
+</selector>

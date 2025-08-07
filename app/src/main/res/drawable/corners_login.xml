@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid 
+		android:color="@color/white" /> <!-- Warna background, bisa disesuaikan -->
+    <corners 
+		android:topLeftRadius="20dp"
+		android:topRightRadius="20dp"
+		android:bottomLeftRadius="0dp"
+		android:bottomRightRadius="0dp" /> <!-- Ukuran radius sudut melengkung -->
+    
+	<!--<size
+        android:width="48dp"
+        android:height="48dp" /> --> <!-- Ukuran background, sesuaikan dengan ukuran ikon -->
+</shape>

@@ -1,0 +1,46 @@
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.poovam.pinedittextfield.SquarePinField
+        android:id="@+id/etPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:autofillHints="none"
+        android:inputType="numberPassword"
+        android:textSelectHandle="@drawable/text_handle"
+        app:cornerRadius="8dp"
+        app:fieldBgColor="@color/me_background"
+        app:fieldColor="@color/me_color_text_light"
+        app:highlightColor="@color/me_blue"
+        app:highlightType="completedFields"
+        app:isCursorEnabled="false"
+        app:noOfFields="6" />
+
+    <TextView
+        android:id="@+id/infoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+		android:textStyle="bold"
+        android:layout_marginHorizontal="18dp"
+        android:text="LUPA PIN?"
+		android:textSize="13sp"
+        android:textColor="@color/me_blue" />
+
+    <com.mhr.mobile.widget.input.KeyboardNumberCustom
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/wrap"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="18dp" >
+
+        <com.mhr.mobile.widget.imageview.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:radius="5dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/wrap"
+        android:layout_toEndOf="@id/wrap"
+        android:text="Type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wrap"
+        android:layout_toEndOf="@id/wrap"
+        android:text="Brand" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrap"
+        android:padding="18dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inquiry" />
+
+        <TextView
+            android:id="@+id/infoInquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:text="Nama" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoInquiry"
+            android:text="Nomor Tujuan" />
+
+        <TextView
+            android:id="@+id/infoNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/infoInquiry"
+            android:layout_marginBottom="10dp"
+            android:text="083168612666" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoNomor"
+            android:text="Pembelian" />
+
+        <TextView
+            android:id="@+id/infoProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/infoNomor"
+            android:layout_marginBottom="10dp"
+            android:text="Nama Produk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoProduk"
+            android:text="Keterangan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/infoProduk"
+            android:text="Pembelian" />
+    </RelativeLayout>
+
+    <com.mhr.mobile.widget.button.SwipeButton
+        android:id="@+id/btnBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:nestedScrollingEnabled="false"
+        app:button_background_drawable="@drawable/swipe_button_rect_bg"
+        app:button_background_padding="14dp"
+        app:button_background_src="@drawable/chevron_right_small"
+        app:button_background_tint="@color/white"
+        app:button_height="55dp"
+        app:button_width="55dp"
+        app:has_active_status="false"
+        app:has_finish_animation="false"
+        app:inner_text="Geser Untuk Bayar"
+        app:inner_text_color="@color/white"
+        app:inner_text_gravity="center"
+        app:inner_text_padding="8dp"
+        app:inner_text_size="16sp"
+        app:outer_background_drawable="@drawable/swipe_rounded_rect_bg"
+        app:outer_background_height="55dp"
+        app:outer_background_tint="@color/white"
+        app:trail_background_tint="@color/transparent"
+        app:trail_enabled="true" />
+
+</RelativeLayout>

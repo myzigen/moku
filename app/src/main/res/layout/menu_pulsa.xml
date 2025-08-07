@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/containerNoProduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="18dp" >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Daftar Produk Akan Muncul Setelah Kamu menginputkan nomor Hp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/backdrop_wave" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" >
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@id/ge" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:clipToPadding="true"
+            android:outlineAmbientShadowColor="@color/me_primary"
+            android:outlineSpotShadowColor="@color/me_primary"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardElevation="5dp"
+            app:strokeWidth="0dp" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutPhoneNumber"
+                style="?attr/textInputOutlinedDenseStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="40dp"
+                android:textColorHint="#512da8"
+                app:boxStrokeErrorColor="@color/status_canceled"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="1dp"
+                app:endIconMode="custom"
+                app:errorIconDrawable="@null"
+                app:errorTextColor="@color/status_canceled"
+                app:expandedHintEnabled="false"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:placeholderText="08xxxxxxxxxx"
+                app:placeholderTextColor="@android:color/darker_gray"
+                app:startIconScaleType="center" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionNone"
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.mhr.mobile.widget.imageview.RoundedImageView
+            android:id="@+id/logoProvider"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/divider"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/shape_corners"
+            android:clipToPadding="true"
+            android:elevation="5.099999904632568dp"
+            android:outlineAmbientShadowColor="@color/me_primary"
+            android:outlineSpotShadowColor="@color/me_primary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/simcard"
+            app:radius="10dp" />
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ge"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/shape_corners_bottom_error" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center|center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtPesanKePengguna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:textColor="@color/status_canceled"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+      
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative" >
+
+        <com.mikelau.shimmerrecyclerviewx.ShimmerRecyclerViewX
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_grid_child_count="2"
+            app:shimmer_demo_layout_manager_type="grid" />
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

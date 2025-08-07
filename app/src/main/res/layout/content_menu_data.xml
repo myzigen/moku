@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="14dp" >
+
+            <LinearLayout
+                android:id="@+id/btnNamaPaket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg_gray"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+					android:id="@+id/namaPaket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Nama Paket"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/toggleNamaPaket"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/chevron_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnKuota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg_gray"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView 
+					android:id="@+id/namaKuota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kuota"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/toggleKuota"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/chevron_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnMasaAktif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg_gray"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+					android:id="@+id/namaMasaAktif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Masa Berlaku"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/toggleMasaAktif"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/chevron_down" />
+            </LinearLayout>
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <TextView
+        android:id="@+id/jumlahProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.mikelau.shimmerrecyclerviewx.ShimmerRecyclerViewX
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expandable"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="8"
+        app:shimmer_demo_grid_child_count="1"
+        app:shimmer_demo_layout="@layout/shimmer_pricelist"
+        app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expandable"
+        android:background="@color/white"
+        android:clickable="true"
+        app:el_expanded="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerFilter"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="10dp" >
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:id="@+id/btnReset"
+                    android:layout_weight="1"
+                    android:text="Reset"
+                    app:cornerRadius="5dp" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.button.MaterialButton
+					android:id="@+id/btnTerapkan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Terapkan"
+                    app:cornerRadius="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <View
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/expandFilter"
+        android:background="#d2000000"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

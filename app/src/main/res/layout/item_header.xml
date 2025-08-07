@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/me_background"
+    android:orientation="horizontal"
+    android:padding="18dp" >
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+		android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Header"
+        android:textStyle="bold" />
+
+    <TextView
+		android:textColor="@color/me_blue"
+        android:id="@+id/infoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|right|end"
+        android:text="Header"
+        android:textStyle="bold" />
+
+</LinearLayout>

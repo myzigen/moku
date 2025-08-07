@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical"
+    android:padding="18dp" >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:strokeColor="#ffe9e9e9" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp" >
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="STRUK PEMBELIAN"
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/infoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="ID Transaksi INV-8273828382"
+                android:textColor="#ff131313"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/infoTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="1 Juli 2025"
+                android:textColor="#ff131313"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/border_line_dashed"
+                android:tint="#e9e9e9" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp" >
+
+                <TextView
+                    android:id="@+id/titleProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="PEMBELIAN"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/space1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/titleProduk"
+                    android:layout_alignTop="@id/titleProduk"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_toEndOf="@id/titleSn"
+                    android:text=":"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/space2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/titleHp"
+                    android:layout_alignTop="@id/titleHp"
+                    android:layout_below="@id/titleProduk"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_toEndOf="@id/titleSn"
+                    android:text=":"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/space3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/titleSn"
+                    android:layout_alignTop="@id/titleSn"
+                    android:layout_below="@id/titleHp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_toEndOf="@id/titleSn"
+                    android:text=":"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/space4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/titleJumlah"
+                    android:layout_alignTop="@id/titleJumlah"
+                    android:layout_below="@id/titleSn"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_toEndOf="@id/titleSn"
+                    android:text=":"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/infoProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/space1"
+                    android:text="Paket Data"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/titleHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleProduk"
+                    android:layout_marginBottom="14dp"
+                    android:text="NO TUJUAN"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/infoHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleProduk"
+                    android:layout_toEndOf="@id/space2"
+                    android:text="083168612666"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/titleSn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleHp"
+                    android:layout_marginBottom="14dp"
+                    android:text="SERIAL NUMBER"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/infoSn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleHp"
+                    android:layout_toEndOf="@id/space3"
+                    android:text="5trd"
+                    android:textColor="#ff131313" />
+
+                <TextView
+                    android:id="@+id/titleJumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleSn"
+                    android:text="JUMLAH"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:id="@+id/infoBayar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleSn"
+                    android:layout_toEndOf="@id/space4"
+                    android:text="Rp.10.500"
+                    android:textColor="#ff000000" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/border_line_dashed"
+                android:tint="#e9e9e9" />
+
+            <TextView
+                android:id="@+id/infoToko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moku Cell"
+                android:textColor="#ff131313"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/infoAlamatToko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="Jl Terusan Terus"
+                android:textColor="#ff131313"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="TERIMA KASIH"
+                android:textColor="#ff131313"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Powered By MOKU"
+                android:textColor="#ffaaabad"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSave"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="Download"
+            android:textColor="#ff00a68e"
+            app:cornerRadius="7dp"
+            app:strokeColor="#00A68E" />
+
+        <View
+            android:layout_width="14dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btnCetak"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="Cetak"
+            android:textColor="#ff00a68e"
+            app:cornerRadius="7dp"
+            app:strokeColor="#00A68E" />
+    </LinearLayout>
+
+</RelativeLayout>

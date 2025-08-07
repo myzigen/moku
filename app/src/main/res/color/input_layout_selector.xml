@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fokus -->
+    <item 
+		android:color="@color/me_divider_input_layout" 
+		android:state_focused="true" />
+    <!-- Error (jika perlu) -->
+    <item 
+		android:color="@color/status_canceled" 
+		android:state_activated="true" 
+		android:state_enabled="true" 
+		android:state_pressed="false"/>
+    <!-- Tidak fokus -->
+    <item 
+		android:color="@color/me_divider" />
+</selector>

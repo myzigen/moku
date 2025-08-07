@@ -1,0 +1,497 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:trackColor="@color/me_blue"
+        app:trackThickness="2dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="150dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.mhr.mobile.widget.ticketview.TicketView
+                android:id="@+id/wrap_va"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:elevation="0dp"
+                android:visibility="gone"
+                app:ticketBackgroundColor="@color/white"
+                app:ticketBorderColor="#e9e9e9"
+                app:ticketCornerRadius="8dp"
+                app:ticketCornerType="scallop"
+                app:ticketDividerColor="#e9e9e9"
+                app:ticketDividerDesign="color"
+                app:ticketDividerLocation="top|bottom"
+                app:ticketDividerPadding="5dp"
+                app:ticketDividerType="dash"
+                app:ticketDividerWidth="1dp"
+                app:ticketElevation="0dp"
+                app:ticketOrientation="vertical"
+                app:ticketPunchLocation="none"
+                app:ticketPunchRadius="12dp"
+                app:ticketScallopRadius="6dp"
+                app:ticketShowBorder="true"
+                app:ticketShowDivider="true"
+                app:view="@id/ticket" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp" >
+
+                    <TextView
+                        android:id="@+id/titleTransfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:text="Transfer Sebelum"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoExpired"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#ffd62f57"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <com.mhr.mobile.widget.imageview.RoundedImageView
+                        android:id="@+id/infoImg"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/titleTransfer"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginEnd="18dp"
+                        app:radius="8dp" />
+
+                    <TextView
+                        android:id="@+id/infoBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/infoImg"
+                        android:layout_toEndOf="@id/infoImg"
+                        android:text="Nama Bank"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoBank"
+                        android:layout_toEndOf="@id/infoImg"
+                        android:text="Transfer Bank"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/titleTgl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoImg"
+                        android:layout_marginBottom="14dp"
+                        android:text="Waktu Topup"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoTgl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoImg"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/titleId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleTgl"
+                        android:layout_marginBottom="14dp"
+                        android:text="ID Transaksi"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/titleTgl"
+                        android:text="MH028492939"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/titleReference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleId"
+                        android:layout_marginBottom="14dp"
+                        android:text="Reference"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoReference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/titleId"
+                        android:text="MH028492939"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/titleKode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleReference"
+                        android:layout_marginBottom="14dp"
+                        android:text="Kode Unik"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoKodeUnik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/titleReference"
+                        android:text="Rp.135"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/titleBiaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleKode"
+                        android:layout_marginBottom="14dp"
+                        android:text="Biaya Layanan"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoBiaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/titleKode"
+                        android:text="Rp.2500"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoJumlah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleBiaya"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="18dp"
+                        android:text="Jumlah Pembayaran"
+                        android:textColor="@color/me_blue" />
+
+                    <RelativeLayout
+                        android:id="@+id/ticket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoJumlah"
+                        android:layout_marginBottom="18dp"
+                        android:padding="18dp" >
+
+                        <TextView
+                            android:id="@+id/infoTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Rp.20.500"
+                            android:textColor="#131313"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/titleNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ticket"
+                        android:layout_marginBottom="14dp"
+                        android:text="Atas Nama"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoPemilik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/ticket"
+                        android:text="Moku"
+                        android:textColor="#131313" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/wrapNoRekening"
+                        style="@style/CardViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleNama"
+                        app:cardBackgroundColor="#f1f3f7"
+                        app:strokeColor="#e9e9e9" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="18dp" >
+
+                            <TextView
+                                android:id="@+id/infoNoRekening"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0284830484033593"
+                                android:textColor="#131313"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/copy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/copy"
+                                android:tint="@color/me_blue" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnOpenBrowser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/titleNama"
+                        android:text="Buka Aplikasi"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </com.mhr.mobile.widget.ticketview.TicketView>
+
+            <com.mhr.mobile.widget.ticketview.TicketView
+                android:id="@+id/wrap_qr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:elevation="0dp"
+                android:visibility="gone"
+                app:ticketBackgroundColor="@color/white"
+                app:ticketBorderColor="#e9e9e9"
+                app:ticketCornerRadius="8dp"
+                app:ticketCornerType="scallop"
+                app:ticketDividerColor="#e9e9e9"
+                app:ticketDividerDesign="color"
+                app:ticketDividerLocation="top|bottom"
+                app:ticketDividerPadding="5dp"
+                app:ticketDividerType="dash"
+                app:ticketDividerWidth="1dp"
+                app:ticketElevation="0dp"
+                app:ticketOrientation="vertical"
+                app:ticketPunchLocation="none"
+                app:ticketPunchRadius="12dp"
+                app:ticketScallopRadius="6dp"
+                app:ticketShowBorder="true"
+                app:ticketShowDivider="true"
+                app:view="@id/content_total" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Batas Pembayaran"
+                        android:textColor="#131313" />
+
+                    <TextView
+                        android:id="@+id/infoExpiredQr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/corners_countdown"
+                        android:drawableLeft="@drawable/countdown"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="#D62F57"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#ffd62f57"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ic_qr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoExpiredQr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="14dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/itm_qris"
+                        android:tint="@color/black" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardQr"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_below="@id/ic_qr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="14dp"
+                        app:cardBackgroundColor="@color/transparent"
+                        app:strokeColor="#e9e9e9"
+                        app:strokeWidth="1dp" >
+
+                        <com.mhr.mobile.widget.imageview.RoundedImageView
+                            android:id="@+id/imgQr"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            app:radius="8dp" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSaveQr"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardQr"
+                        android:layout_centerHorizontal="true"
+                        android:text="Unduh"
+                        android:textColor="@color/me_blue"
+                        app:cornerRadius="8dp"
+                        app:strokeColor="@color/me_blue" />
+
+                    <com.mhr.mobile.widget.imageview.RoundedImageView
+                        android:id="@+id/imgClientQr"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/btnSaveQr"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/jp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgClientQr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="18dp"
+                        android:text="Jumlah Pembayaran"
+                        android:textColor="@color/me_blue" />
+
+                    <RelativeLayout
+                        android:id="@+id/content_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/jp"
+                        android:layout_marginBottom="18dp"
+                        android:padding="18dp" >
+
+                        <TextView
+                            android:id="@+id/infoTotalQr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Rp.20.500"
+                            android:textColor="#131313"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content_total" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Pelanggan"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:id="@+id/infoQrName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="14dp"
+                            android:text="Moku"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/infoQrName"
+                            android:text="ID Transaksi"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:id="@+id/infoQrId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@id/infoQrName"
+                            android:layout_marginBottom="14dp"
+                            android:text="194839482"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/infoQrId"
+                            android:text="Reference"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:id="@+id/infoQrRef"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@id/infoQrId"
+                            android:layout_marginBottom="14dp"
+                            android:text="MH93839384"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/infoQrRef"
+                            android:text="Kode Unik"
+                            android:textColor="#131313" />
+
+                        <TextView
+                            android:id="@+id/infoQrKode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@id/infoQrRef"
+                            android:layout_marginBottom="14dp"
+                            android:text="144"
+                            android:textColor="#131313" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.mhr.mobile.widget.ticketview.TicketView>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

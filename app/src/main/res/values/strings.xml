@@ -1,0 +1,109 @@
+<resources>
+
+    <string name="app_name">Moku</string>
+    <string name="app_provider">Penyedia Layanan</string>
+    <string name="title_misi">Misi</string>
+    <string name="title_checkin">Check In</string>
+
+    <!-- BottomNavigationTitle -->
+    <string name="title_home">Home</string>
+    <string name="title_history">Riwayat</string>
+    <string name="title_pelanggan">Kelola</string>
+    <string name="title_akun">Akun</string>
+    <string name="error_need_to_add_trailing_effect_drawable"> If you set trail enabled, you must set a value to button_trail_drawable. </string>
+    <string name="title_nomor">Nomor Hp</string>
+    <string name="pulsa">Pulsa</string>
+    <string name="initial_nomor_hp">081234567890</string>
+    <string name="prabayar">prabayar</string>
+    <string name="pascabayar">pascabayar</string>
+
+    <string-array name="cat_textfield_exposed_dropdown_content" translatable="false">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+    </string-array>
+
+    <string name="term_service">dengan memberikan nomor telepon saya, saya dengan ini menyetujui dan menerima persyaratan layanan dan kebijakan privasi dalam penggunaan aplikasi ini</string>
+    <string name="lorem_ipsum">	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, 
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+	Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+	It has survived not only five centuries, but also the leap into electronic typesetting, </string>
+
+</resources>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   
+   <item
+        android:id="@+id/menu_laporkan"
+        android:title="Laporkan Transaksi"
+        android:showAsAction="always" />
+		
+    <item
+        android:id="@+id/menu_delete"
+        android:title="Hapus Riwayat Transaksi"
+        android:showAsAction="always" />
+</menu>

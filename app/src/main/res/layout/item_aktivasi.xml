@@ -1,0 +1,37 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:orientation="vertical"
+        android:padding="14dp" >
+
+        <com.mhr.mobile.widget.imageview.RoundedImageView
+			app:radius="8dp"
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:maxEms="8"
+            android:maxLines="2"
+            android:scrollHorizontally="true"
+            android:text="Dana"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

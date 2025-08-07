@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_expanded="false" >
+
+        <LinearLayout
+            android:id="@+id/wrapCatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_pending_back"
+            android:orientation="vertical"
+            android:padding="18dp" >
+
+            <TextView
+                android:id="@+id/infoCatatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/ic_speaker"
+                android:drawablePadding="8dp"
+                android:textColor="@color/me_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/infoPenjelasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/me_blue"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expandable"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/tab_bg_kuota"
+        android:visibility="gone"
+        app:tabBackground="@drawable/tab_kuota_selector"
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="@null" />
+
+    <com.mikelau.shimmerrecyclerviewx.ShimmerRecyclerViewX
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab"
+        android:overScrollMode="never"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="8"
+        app:shimmer_demo_duration="700"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout_manager_type="grid"
+        app:shimmer_demo_shimmer_color="@color/me_background_back" />
+
+    <ProgressBar
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_drawable"
+        android:visibility="gone" />
+
+</RelativeLayout>

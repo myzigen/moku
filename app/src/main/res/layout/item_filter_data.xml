@@ -1,0 +1,9 @@
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnMasaAktif"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+	android:textColor="@color/me_color_icon"
+    app:backgroundTint="@color/me_divider"
+    app:cornerRadius="7dp" />

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="24.0dip"
+    android:width="24.0dip"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+		android:name="bell">
+        <clip-path
+            android:pathData="M0,0h24v24h-24z" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M21,19L19.3636,14.5556V10.3636C19.3636,6.2968 16.0668,3 12,3V3C7.9332,3 4.6364,6.2968 4.6364,10.3636V14.5556L3.2477,18.3272C3.1275,18.6537 3.3691,19 3.7169,19H12H16.5"
+            android:strokeColor="@color/me_color_icon"
+            android:strokeWidth="2.0"
+            android:strokeLineJoin="round" />
+        <path
+            android:fillColor="@color/me_color_icon"
+            android:pathData="M12,0L12,0A1,1 0,0 1,13 1L13,3A1,1 0,0 1,12 4L12,4A1,1 0,0 1,11 3L11,1A1,1 0,0 1,12 0z" />
+        <path
+            android:fillColor="@color/me_color_icon"
+            android:pathData="M16,22l-0,2l-8,0l-0,-2z" />
+    </group>
+</vector>

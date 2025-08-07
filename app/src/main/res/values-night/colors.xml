@@ -1,0 +1,21 @@
+<resources>
+
+    <color name="me_primary">#161619</color>
+    <color name="me_background">#1E1E23</color>
+    <color name="me_background_back">#1E1E23</color>
+    <color name="me_background_front">#161619</color>
+    <color name="me_toolbar_back">#1E1E23</color>
+    <color name="me_toolbar_front">#161619</color>
+    <color name="me_toolbar_title">#ffffff</color>
+    <color name="me_color_icon">#ffffff</color>
+    <color name="me_color_text">#000000</color>
+	<color name="me_color_text_light">#767676</color>
+    <color name="me_divider">#302C36</color>
+	<color name="me_divider_input_layout">#ffffff</color>
+    <color name="me_background_input">#1E1E23</color>
+	<color name="me_background_keyboard">#161619</color>
+	<color name="me_background_keyboard_btn">#1E1E23</color>
+	<color name="me_blue">#2196F3</color>
+	<color name="color_btn_disabled">#2F2E32</color>
+
+</resources>

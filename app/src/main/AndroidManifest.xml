@@ -1,0 +1,121 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name=".ui.intro.SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".notification.ReminderReceiver" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationSmallIcon"
+            android:resource="@drawable/ic_launcher_adaptive_fore" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        -->
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".ui.intro.UserLogin"
+            android:theme="@style/AppTheme.Light" />
+        <activity
+            android:name=".ui.intro.UserOtp"
+            android:theme="@style/AppTheme.Light" />
+        <activity android:name=".ui.intro.UserPin" />
+        <activity
+            android:name=".ui.intro.UserRegister"
+            android:theme="@style/AppTheme.Light" />
+        <!-- Produk -->
+        <activity android:name=".ui.produk.prepaid.pulsa.PulsaReload" />
+		<activity android:name=".ui.produk.prepaid.pulsa.PulsaSingaporeReload"/>
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaPager" />
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaReload" />
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaPerdana" />
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaPerdanaMassal" />
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaVoucherInject" />
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaVoucherInjectMassal" />
+        <activity android:name=".ui.produk.prepaid.kuota.KuotaVoucherFisik" />
+        <activity android:name=".ui.produk.prepaid.streaming.StreamingReload" />
+        <activity android:name=".ui.produk.ProdukAktivasi" />
+        <activity android:name=".ui.produk.prepaid.pln.PLNTokenReload" />
+        <activity android:name=".ui.produk.prepaid.ewallet.EwalletReload" />
+        <activity android:name=".ui.produk.prepaid.game.GameReload" />
+        <activity android:name=".ui.produk.ProdukType" />
+        <activity android:name=".ui.produk.prepaid.PrepaidForm" />
+        <activity android:name=".ui.produk.ProdukPembayaran" />
+        <activity android:name=".ui.produk.ProdukNoInput" />
+        <activity android:name=".ui.produk.prepaid.convert.ConvertPaypal" />
+        <activity android:name=".ui.status.StatusTopup" />
+        <activity android:name=".ui.status.StatusTransaksi" />
+        <activity android:name=".ui.status.StatusLayoutCallback" />
+        <activity android:name=".ui.status.PreviewBuktiBayar" />
+
+        <!-- Pascabayar -->
+        <activity android:name=".ui.produk.pasca.ProdukPasca" />
+        <activity android:name=".ui.produk.pasca.PascaWifi" />
+        <activity android:name=".ui.produk.pasca.PascaBpjs" />
+        <activity android:name=".ui.produk.pasca.PascaPLN" />
+        <activity android:name=".ui.produk.pasca.tagihan.TagihanWifi" />
+        <activity android:name=".ui.produk.pasca.tagihan.TagihanPLN" />
+        <activity android:name=".ui.produk.pasca.tagihan.TagihanBPJS" />
+        <activity android:name=".ui.content.ContentKeranjang" />
+        <activity android:name=".ui.content.ContentDetailPembelian" />
+        <activity android:name=".ui.content.ContentTopup" />
+        <activity android:name=".ui.content.ContentKasir" />
+        <activity android:name=".ui.content.ContentMenuKontak" />
+        <activity android:name=".ui.content.ContentTopupStatus" />
+        <activity android:name=".ui.content.ContentNotification" />
+        <activity android:name=".ui.tagihan.DetailTagihanInternet" />
+        <!-- Home -->
+        <activity android:name=".ui.navcontent.home.dashboard.DashboardTopup" />
+        <activity android:name=".ui.navcontent.home.dashboard.DashboardDaftarBank" />
+        <activity android:name=".ui.navcontent.home.dashboard.DashboardLevel" />
+        <activity android:name=".ui.navcontent.home.dashboard.DashboardTopupStatus" />
+        <activity android:name=".ui.navcontent.home.marketplace.MarketplaceProduk" />
+        <!-- History -->
+
+        <activity android:name=".ui.navcontent.kelola.pelanggan.DaftarPelanggan" />
+        <activity android:name=".ui.navcontent.kelola.pelanggan.TambahPelanggan" />
+        <activity android:name=".ui.navcontent.kelola.pelanggan.DaftarPembeli" />
+        <!-- Akun -->
+        <activity android:name=".ui.navcontent.akun.web.WebInjection" />
+        <activity android:name=".ui.navcontent.akun.AkunUpgrade" />
+        <activity android:name=".ui.navcontent.akun.AkunPin" />
+		<activity android:name=".ui.navcontent.akun.AkunNewPin"/>
+        <activity android:name=".ui.navcontent.akun.AkunDevices" />
+        <activity android:name=".ui.navcontent.akun.AkunMediaPromosi" />
+        <activity android:name=".ui.navcontent.akun.AkunProfile" />
+        <activity android:name=".ui.navcontent.akun.AkunToko" />
+        <activity android:name=".ui.navcontent.akun.AkunAppSetting" />
+        <activity android:name=".ui.produk.ProdukPLNPasca" />
+		<activity android:name="com.mhr.mobile.ui.navcontent.AkunMaintance"/>
+    </application>
+
+</manifest>

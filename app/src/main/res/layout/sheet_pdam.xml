@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp   "
+        android:background="@drawable/corners_search_bg"
+        android:focusable="false"
+        android:theme="@style/SearchViewStyle"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="Cari"
+        app:searchIcon="@drawable/search" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/expandable"
+        android:layout_below="@id/searchview" >
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:text="Wilayah Tidak Di Temukan"
+            android:visibility="invisible" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.mikelau.shimmerrecyclerviewx.ShimmerRecyclerViewX
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_demo_angle="20"
+                app:shimmer_demo_child_count="50"
+                app:shimmer_demo_grid_child_count="1"
+                app:shimmer_demo_layout="@layout/shimmer_bottom_list"
+                app:shimmer_demo_layout_manager_type="linear_vertical" />
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+			android:background="@drawable/nav_bottom_corners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+				android:layout_gravity="center_vertical"
+                android:id="@+id/providerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnfinish"
+				app:cornerRadius="8dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Pilih"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/me_primary" />
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</RelativeLayout>

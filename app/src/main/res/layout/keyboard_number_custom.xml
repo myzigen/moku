@@ -1,0 +1,131 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_background_keyboard"
+        android:orientation="horizontal" >
+
+        <GridLayout
+            android:id="@+id/keypadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:paddingBottom="18dp"
+            android:paddingEnd="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="18dp"
+            android:rowCount="4" >
+
+            <!-- Baris 1 -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b1"
+                style="@style/KeyButtonCustom"
+                android:text="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b2"
+                style="@style/KeyButtonCustom"
+                android:text="2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b3"
+                style="@style/KeyButtonCustom"
+                android:text="3" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                style="@style/KeyButtonCustom"
+				app:tint="@color/me_color_icon"
+                android:src="@drawable/delete" />
+
+            <!-- Baris 2 -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b4"
+                style="@style/KeyButtonCustom"
+                android:text="4" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b5"
+                style="@style/KeyButtonCustom"
+                android:text="5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b6"
+                style="@style/KeyButtonCustom"
+                android:text="6" />
+
+            <!-- Tombol Selesai mulai di sini -->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnSelesai"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="3"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_row="1"
+                android:layout_rowSpan="3"
+                app:cardBackgroundColor="@color/me_blue"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="0dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Selesai"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Baris 3 -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b7"
+                style="@style/KeyButtonCustom"
+                android:text="7" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b8"
+                style="@style/KeyButtonCustom"
+                android:text="8" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b9"
+                style="@style/KeyButtonCustom"
+                android:text="9" />
+
+            <!-- Baris 4 -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bOOO"
+                style="@style/KeyButtonCustom"
+                android:text="000" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bO"
+                style="@style/KeyButtonCustom"
+                android:text="0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bControl"
+                style="@style/KeyButtonCustom"
+                android:text="Ctrl + A"
+                android:textSize="12sp" />
+        </GridLayout>
+    </LinearLayout>
+
+</merge>

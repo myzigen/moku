@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+android {
+    compileSdk 34
+	namespace "com.mhr.mobile"
+			
+    defaultConfig {
+        applicationId "com.mhr.mobile"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.2"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+			shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+	
+	buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+	
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha03'
+    implementation 'com.google.android.material:material:1.12.0-alpha03'
+	implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha13'	
+    implementation 'androidx.annotation:annotation:1.8.0-alpha01'
+	implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha03'
+	implementation 'com.google.crypto.tink:tink-android:1.6.1'
+    implementation 'com.google.android.play:integrity:1.4.0'
+	
+	
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+	implementation 'com.github.smarteist:Android-Image-Slider:1.4.0'
+	implementation 'com.github.bumptech.glide:glide:4.16.0'
+	implementation 'cat.ereza:customactivityoncrash:2.4.0'
+	// Firebase
+	implementation platform('com.google.firebase:firebase-bom:32.0.0')
+	implementation 'com.google.firebase:firebase-auth:23.1.0'
+	implementation 'com.google.firebase:firebase-firestore:25.1.1'  // Firestore
+    implementation 'com.google.firebase:firebase-database:21.0.0'  // Firebase Realtime Database
+    //implementation 'com.google.firebase:firebase-messaging:24.1.0'
+	
+	
+	// BUG REPORT
+	//implementation 'com.instabug.library:instabug:14.3.1'
+    implementation 'com.karumi:dexter:6.2.3'
+	implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+	implementation 'com.onesignal:OneSignal:5.1.26'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.github.mikekpl:shimmer-recyclerview-x:2.0.0'
+    implementation 'com.github.cachapa:ExpandableLayout:2.9.2'
+	implementation 'com.github.zhpanvip:viewpagerindicator:1.2.3'
+    implementation 'com.github.poovamraj:PinEditTextField:1.2.6'
+	implementation 'com.airbnb.android:lottie:6.6.2'
+}
