@@ -67,6 +67,7 @@ dependencies {
 	
 	//implementation 'com.instabug.library:instabug:14.3.1'
     implementation 'com.karumi:dexter:6.2.3'
+	implementation 'com.squareup.okio:okio:3.15.0'
 	implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
 	implementation 'com.onesignal:OneSignal:5.1.26'
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
