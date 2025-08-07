@@ -1,12 +1,13 @@
 package com.mhr.mobile.manage.worker;
-
+/*
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 import java.io.File;
-
-public class CacheCleanupWorker extends Worker {
+*/
+public class CacheCleanupWorker/* extends Worker*/ {
+  /*
   public CacheCleanupWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
     super(context, workerParams);
   }
@@ -41,4 +42,5 @@ public class CacheCleanupWorker extends Worker {
     }
     return dir.delete();
   }
+  */
 }
