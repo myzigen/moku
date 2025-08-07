@@ -32,7 +32,7 @@ android {
     }
 }
 
-**// Letakkan DI SINI, di luar dependencies**
+// Letakkan DI SINI, di luar dependencies
 configurations.all {
     resolutionStrategy {
         force 'com.google.code.gson:gson:2.11.0'
